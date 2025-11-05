@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: linear-gradient(135deg, #f8f8f4, #fdf5db);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.pricing-container{
+    width: 1100px;
+    background-color: #ffffffb3;
+    border-radius: 25px;
+    padding: 25px 40px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px  30px rgba(0,0,0,0.1);
+    transform: scale(0.92);
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.logo{
+    font-size: 22px;
+    font-weight: bold;
+    color: #222;
+}
+.nav{
+    display: flex;
+    gap: 20px;
+    font-size: 13px;
+    color: #555;
+}
+.nav span:hover{
+    color: #111;
+    cursor: pointer;
+}
+.toggle{
+    background: #efefef;
+    border-radius: 30px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: fit-content;
+    margin-bottom: 25px;
+}
+.toggle button{
+    border: none;
+    background: transparent;
+    padding: 8px 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+.toggle button.active{
+    background-color: #111;
+    color: #fff;
+}
+.plans{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.plan{
+    flex: 1;
+    background-color: #f9f8f5;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 6px  15px rgba(0,0,0,0.05);
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.plan:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+.plan.popular::after{
+    content: "Popular";
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    background-color: #f8e473;
+    color: #111;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+.plan.dark{
+    background: #1f1f1f;
+    color: #fff;
+    border: 2px solid #f8e473;
+}
+.plan h3{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.price{
+    font-size: 34px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+.old-price{
+    text-decoration: line-through;
+    color: #888;
+    font-size: 20px;
+    margin-right: 6px;
+}
+.save{
+    font-size: 11px;
+    color: #f8e473;
+    font-weight: 600;
+}
+.plan p{
+    font-size: 11px;
+    color: #666;
+    margin-bottom: 20px;
+}
+.plan.dark p{
+    color: #aaa;
+}
+ul{
+    list-style: none;
+    margin-bottom: 20px;
+}
+ul li{
+    font-size: 13px;
+    margin-bottom: 7px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+ul li::before{
+    content: "\2714";
+    color: #3cb371;
+}
+ul li.off::before{
+    content: "\2718";
+    color: #aaa;
+}
+ul li.off{
+    color: #aaa;
+}
+button.cta{
+    width: 100%;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    background-color: #111;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.plan.dark button.cta{
+    background: #f8e473;
+    color: #111;
+}
+button.cta:hover{
+    transform: scale(1.05);
+    background: #333;
+}
+.plan.dark button.cta:hover{
+    background-color: #fff;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="pricing-container">
+        <div class="header">
+            <div class="logo">HH</div>
+            <div class="nav">
+                <span>Dashboard</span>
+                <span>People</span>
+                <span>Hiring</span>
+                <span>Devices</span>
+                <span>Salary</span>
+                <span>Apps</span>
+                <span>Calender</span>
+                <span>Reviews</span>
+                <span><i class="fa-solid fa-gear"></i></span>
+                <span><i class="fa-solid fa-user"></i></span>
+            </div>
+        </div>
+
+        <h2 style="margin-bottom: 20px;">Pricing</h2>
+
+        <div class="toggle">
+            <button class="active">Annual</button>
+            <button>Monthly</button>
+        </div>
+
+        <div class="plans">
+            <div class="plan">
+                <h3>Recruit Basic</h3>
+                <div class="price">$17<span style="font-size: 13px;"> /month (USD)</span></div>
+                <p>$228  billed yearly</p>
+                <ul>
+                    <li>Acces to core HR feature</li>
+                    <li>Employee record management</li>
+                    <li>Basic reporting tools</li>
+                    <li>Manage up to 10 team members</li>
+                    <li class="off">Track employee attendance</li>
+                    <li class="off">Assign and monitor tasks</li>
+                    <li class="off">Email support</li>
+                    <li class="off">Simple onboarding process</li>
+                    <li class="off">Designed user-focused interfaces, optimized user</li>
+                </ul>
+                <button class="cta">Cancel</button>
+            </div>
+
+            <div class="plan dark">
+                <h3>Talent Pro</h3>
+                <div class="price"><span class="old-price">$26</span>$19<span style="font-size: 13px;"> /month (USD)</span></div>
+                <p>#338 billd yearly  <span class="save">Save 27%</span></p>
+                <ul>
+                    <li>Acces to core HR feature</li>
+                    <li>Employee record management</li>
+                    <li>Basic reporting tools</li>
+                    <li>Manage up to 10 team members</li>
+                    <li>Track employee attendance</li>
+                    <li>Assign and monitor tasks</li>
+                    <li class="off">Email support</li>
+                    <li class="off">Simple onboarding process</li>
+                    <li class="off">Designed user-focused interfaces, optimized user</li>
+                </ul>
+                <button class="cta">Start 7-days Free Trial</button>
+            </div>
+
+            <div class="plan popular">
+                <h3>HR Master</h3>
+                <div class="price">$34<span style="font-size: 13px;"> /month (USD)</span></div>
+                <p>$408 billed  yearly</p>
+                <ul>
+                    <li>Acces to core HR feature</li>
+                    <li>Employee record management</li>
+                    <li>Basic reporting tools</li>
+                    <li>Manage up to 10 team members</li>
+                    <li>Track employee attendance</li>
+                    <li>Assign and monitor tasks</li>
+                    <li>Email support</li>
+                    <li>Simple onboarding process</li>
+                    <li>Designed user-focused interfaces, optimized user</li>
+                </ul>
+                <button class="cta">Start 7-days Free Trial</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        const buttons = document.querySelectorAll(".toggle button");
+        buttons.forEach(btn =>{
+            btn.addEventListener("click", () => {
+                buttons.forEach(b => b.classList.remove("active"));
+                btn.classList.add("active");
+            })
+        })
+    </script>
+
+</body>
+</html>
